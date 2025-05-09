@@ -1,0 +1,170 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #f9d342;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #3246a5;
+}
+
+/* Seção de introdução */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    color: #f9d342;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.intro .button {
+    display: inline-block;
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.intro .button:hover {
+    background: #45a049;
+}
+
+.custom-button {
+    background-color: #000000; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.custom-button:hover {
+    background-color: #3246a5; /* Cor ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    /* Cabeçalho */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Seção principal */
+    .intro, .about, .contact {
+        padding: 20px;
+    }
+
+    .intro h2, .about h2, .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p, .about p, .contact p {
+        font-size: 1rem;
+    }
+
+    .intro .button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    /* Vídeos */
+    .video-container video {
+        width: 100%;
+    }
+
+    /* Formulários */
+    form input, form textarea, form button {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}

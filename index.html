@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reprodutor de videos</title>
+    <link rel="icon" href="../imagem/5a025e222970a3dd2c3706bde935ae15.jpg" type="image/x-icon">
+
+<link rel="stylesheet" href="../css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <h1>Hospedagem de Vídeos</h1>
+    </header>
+    <main>
+        <section class="video-container">
+            <h2>Vídeo em Destaque</h2>
+            <video controls width="100%">
+                <source src="../video.mp4/A VOLTA DE TEEMO __ EM BUSCA DO CAZUM CELESTIAL ✨(720P_60FPS).mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </section>
+        <section class="comments-section">
+            <h2>Comentários e Avaliações</h2>
+            <form>
+                <textarea placeholder="Deixe seu comentário aqui..."></textarea>
+                <div class="rating">
+                    <label for="rating">Avaliação:</label>
+                    <select id="rating" name="rating">
+                        <option value="5">5 - Excelente</option>
+                        <option value="4">4 - Muito Bom</option>
+                        <option value="3">3 - Bom</option>
+                        <option value="2">2 - Regular</option>
+                        <option value="1">1 - Ruim</option>
+                    </select>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="comments-list">
+                <h3>Comentários Recentes</h3>
+                <ul>
+                    <li>Usuário 1: Ótimo vídeo! - Avaliação: 5</li>
+                    <li>Usuário 2: Muito bom, mas poderia ser mais curto. - Avaliação: 4</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hospedagem de Vídeos. Todos os direitos reservados.</p>
+                       <button class="custom-button" onclick="window.location.href='./home.html';">Página Inicial</button>
+    </footer>
+</body>
+</html>
