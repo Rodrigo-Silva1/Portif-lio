@@ -1,0 +1,114 @@
+/* Estilos para telas pequenas */
+@media (max-width: 768px) {
+    /* Cabeçalho */
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    header nav ul li a {
+        font-size: 1rem;
+        padding: 10px;
+        display: block;
+        text-align: center;
+    }
+
+    /* Seções principais */
+    .intro, .about, .contact {
+        padding: 20px;
+    }
+
+    .intro h2, .about h2, .contact h2 {
+        font-size: 1.5rem;
+    }
+
+    .intro p, .about p, .contact p {
+        font-size: 1rem;
+    }
+
+    /* Container de vídeos */
+    .video-container {
+        grid-template-columns: 1fr; /* Apenas uma coluna */
+    }
+
+    .video-container video {
+        width: 100%;
+    }
+
+    /* Botões */
+    .custom-button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    /* Formulários */
+    form input, form textarea, form button {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%; /* Ocupa toda a largura */
+    }
+
+    form textarea {
+        resize: none; /* Evita redimensionamento em dispositivos móveis */
+    }
+
+    /* Rodapé */
+    footer {
+        font-size: 0.8rem;
+        padding: 10px 5px;
+        text-align: center;
+    }
+}
+
+/* Estilo do botão "hambúrguer" */
+.menu-toggle {
+    display: none; /* Esconde o botão em telas grandes */
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+/* Estilo do menu em telas pequenas */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Mostra o botão em telas pequenas */
+    }
+
+    nav ul {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.active {
+        display: flex; /* Mostra o menu quando ativo */
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul li a {
+        padding: 15px;
+        text-align: center;
+        display: block;
+    }
+}
